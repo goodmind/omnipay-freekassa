@@ -94,11 +94,11 @@ class Gateway extends AbstractGateway
     }
     
     /**
-	 * @param array $parameters
-	 * @return \Omnipay\FreeKassa\Message\NotificationRequest
-	 */
-	public function acceptNotification(array $parameters = [])
-	{
-		return $this->createRequest('\Omnipay\FreeKassa\Message\NotificationRequest, $parameters);
-	}
+     * @param array $parameters
+     * @return \Omnipay\FreeKassa\Message\NotificationRequest
+     */
+     public function acceptNotification(array $parameters = [])
+     {
+	return $this->createRequest('\Omnipay\FreeKassa\Message\NotificationRequest, $parameters);
+     }
 }
