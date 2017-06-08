@@ -18,6 +18,15 @@ namespace Omnipay\FreeKassa\Message;
 class NotificationRequest extends AbstractRequest
 {
 	/**
+	 * Get the data for this request.
+         * @return array request data
+         */
+        public function getData()
+        {
+               return $this->httpRequest->request->all();
+        }
+	
+	/**
 	 * Send the request with specified data.
 	 *
 	 * @param mixed $data The data to send
